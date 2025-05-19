@@ -27,17 +27,17 @@ let animationFunctions = [];
 // Animated Text
 let textList = [
     {
-        text:   ['bobby',        'reed\'s'],
+        text:   ['bobby',        'reed'],
         in:     [an.SLIDE_DOWN, an.SLIDE_UP],
         out:    [an.SLIDE_DOWN, an.SLIDE_UP],
     },
     {
-        text:   ['RE',      'SU',      'ME'],
-        in:     [an.SLIDE_RIGHT, an.SLIDE_DOWN,  an.SLIDE_LEFT],
-        out:    [an.SLIDE_RIGHT, an.FADE_OUT,    an.SLIDE_LEFT],
+        text:   ['computer science',      'instructor'],
+        in:     [an.SLIDE_RIGHT, an.SLIDE_DOWN],
+        out:    [an.SLIDE_RIGHT, an.FADE_OUT],
     },
     {
-        text:   ['coming',         'soon'],
+        text:   ['technology',         'adventurer'],
         in:     [an.FADE_IN,       an.FADE_IN],
         out:    [an.SLIDE_RIGHT,   an.SLIDE_LEFT],
     }, 
@@ -50,12 +50,12 @@ let animatedText = new AnimatedText(animatedTextContainer, textList, {
 setTimeout(() => animationFunctions.push(animatedText.play()), timeControl.introDelay);
 
 // Carousel
+    //TODO: need images for these projects
 const images = [
-    {src: 'images/carousel/jeep.png', alt: 'Jeep'},
-    {src: 'images/carousel/ford.png', alt: 'Ford'},
-    {src: 'images/carousel/f150.png', alt: 'Ford F150'},
-    {src: 'images/carousel/pathfinder.png', alt: 'Toyota'},
-    {src: 'images/carousel/toyota.png', alt: 'Toyota'},
+    {src: 'images/projects/flybrarians.jpg', alt: 'Flybrarians VR Aviation Training'},
+    {src: 'images/projects/fairgrounds.jpg', alt: 'Virtual Fairgrounds'},
+    {src: 'images/projects/nasopharyngeal.jpg', alt: 'Patented 3D Printed Swab'},
+    {src: 'images/projects/stomag.jpg', alt: 'STOMAG - 3D Printed Stoma Tool'},
 ];
 let carouselDiv = document.getElementById('carousel-div');
 let carousel = new Carousel(carouselDiv, images, {
@@ -75,11 +75,36 @@ path.render()
 
 // Circle Objects
 let circles = [
-    { iconCode: '&#xf1b4;', path: path, description: {title: 'DEV - Owner', text: 'DEV Website'} },
-    { iconCode: '&#xf09b;', path: path, description: {title: 'Github', text: 'Latest Projects'} },
-    { iconCode: '&#xf08c;', path: path, description: {title: 'LinkedIn', text: ' My Experience'} },
-    { iconCode: '&#xf167;', path: path, description: {title: 'YouTube', text: 'Quality Content'} },
-    //{ iconCode: '&#xf09a;', path: path, description: {title: 'Facebook', text: 'Social Media'} },
+    { 
+        iconCode: '&#xf0b1;', 
+        path: path, 
+        description: {title: 'Experience', text: 'Professional Journey'},
+        clickHandler: () => document.getElementById('experience-section').scrollIntoView({behavior: 'smooth'})
+    },
+    { 
+        iconCode: '&#xf085;', 
+        path: path, 
+        description: {title: 'Projects', text: 'Key Innovations'},
+        clickHandler: () => document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'})
+    },
+    { 
+        iconCode: '&#xf1ea;', 
+        path: path, 
+        description: {title: 'Publications', text: 'Academic Work'},
+        clickHandler: () => document.getElementById('publications-section').scrollIntoView({behavior: 'smooth'})
+    },
+    { 
+        iconCode: '&#xf19d;', 
+        path: path, 
+        description: {title: 'Education', text: 'Degrees & Skills'},
+        clickHandler: () => document.getElementById('skills-section').scrollIntoView({behavior: 'smooth'})
+    },
+    { 
+        iconCode: '&#xf019;', 
+        path: path, 
+        description: {title: 'Download', text: 'Resume & CV'},
+        clickHandler: () => document.getElementById('download-section').scrollIntoView({behavior: 'smooth'})
+    },
 ];
 let circlesGroup = document.createElementNS(SVG_DOC, 'g');
 circlesGroup.setAttribute('class', CIRCLE_OBJECTS_GROUP_CLASS);
