@@ -27,12 +27,12 @@ let animationFunctions = [];
 // Animated Text
 let textList = [
     {
-        text:   ['dev',        'tarek\'s'],
+        text:   ['bobby',        'reed\'s'],
         in:     [an.SLIDE_DOWN, an.SLIDE_UP],
         out:    [an.SLIDE_DOWN, an.SLIDE_UP],
     },
     {
-        text:   ['coolest',      'library',      'ever'],
+        text:   ['RE',      'SU',      'ME'],
         in:     [an.SLIDE_RIGHT, an.SLIDE_DOWN,  an.SLIDE_LEFT],
         out:    [an.SLIDE_RIGHT, an.FADE_OUT,    an.SLIDE_LEFT],
     },
@@ -75,11 +75,11 @@ path.render()
 
 // Circle Objects
 let circles = [
-    { iconCode: '&#xf1b4;', path: path, description: {title: 'Behance', text: 'Design Portfolio'} },
+    { iconCode: '&#xf1b4;', path: path, description: {title: 'DEV - Owner', text: 'DEV Website'} },
     { iconCode: '&#xf09b;', path: path, description: {title: 'Github', text: 'Latest Projects'} },
     { iconCode: '&#xf08c;', path: path, description: {title: 'LinkedIn', text: ' My Experience'} },
     { iconCode: '&#xf167;', path: path, description: {title: 'YouTube', text: 'Quality Content'} },
-    { iconCode: '&#xf09a;', path: path, description: {title: 'Facebook', text: 'Social Media'} },
+    //{ iconCode: '&#xf09a;', path: path, description: {title: 'Facebook', text: 'Social Media'} },
 ];
 let circlesGroup = document.createElementNS(SVG_DOC, 'g');
 circlesGroup.setAttribute('class', CIRCLE_OBJECTS_GROUP_CLASS);

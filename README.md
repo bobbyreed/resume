@@ -1,6 +1,5 @@
-# Vanilla JS Landing Page with SVG Animations
-##### [Open Live Preview](https://dev-tarek.github.io/vanilla-animated-landing/)
-![](images/preview.png)
+# Resume Site
+##### [Open Live Preview](https://resume.abobbyreed.com/)
 ___
 ## Contents
 * [Introduction](#introduction)
@@ -12,7 +11,7 @@ ___
 ___
 
 ## Introduction
-This is a vanilla HTML-CSS-JS template to customize and develop - not a fully functional view. All code was written from scratch for practicing so this may not be the optimal implementation for you.
+This was created using a vanilla HTML-CSS-JS template. This has been highly customized. If you want to build a similar one, [go to the template repo here](https://github.com/Dev-Tarek/vanilla-animated-landing). (Thanks to [Dev Tarek](https://github.com/Dev-Tarek/)). The documentation below is mostly Dev's with light updates for my particular build. 
 
 ## Features
 * Basic navigation bar
