@@ -18,16 +18,18 @@
     font-size: 6vw;
     height: 6vw;
     line-height: 6vw;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     overflow: hidden;
 }
 .animation-block .text-animation p {
     margin: 0;
     transition: all var(--animated-text-transition-speed) ease-in-out;
 }
+/*
 .animation-block .text-animation:nth-child(even) {
     font-weight: 600;
     font-size: 8vw;
     height: 8vw;
     line-height: 8vw;
 }
+*/
