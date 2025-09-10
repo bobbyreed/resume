@@ -3,3 +3,5 @@ Sources of images:
 - imgbin.com
 - cleanpng.com
 - wallpapermaiden.com
+- chatgpt.com
+    - background pixel image
