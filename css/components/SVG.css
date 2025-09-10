@@ -47,8 +47,8 @@ svg .circle-group > text {
     transition: opacity var(--circle-group-fade-speed) ease-in-out;
 }
 .circle-obj {
-    fill: #fff;
-    stroke: #846449;
+    fill: #2dfae9;
+    stroke: #ee8937;
     stroke-width: 8px;
     transition: offset-distance var(--circle-transition-speed) ease-in-out, r var(--circle-scale-speed) ease-in-out, fill var(--circle-scale-speed) ease-in-out;
 }
