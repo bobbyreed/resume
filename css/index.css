@@ -23,7 +23,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: #2926b6;
-    opacity:30%;
+    opacity:70%;
     mask-image: url('../images/masks/maskOverlayL.png'), url('../images/masks/maskOverlayR.png');
     mask-position: bottom left, bottom right;
     mask-repeat: no-repeat;
